@@ -157,13 +157,14 @@ console.log(calcularMedias(pessoas))
 //[[1,2], [3,4], [5,6], [7,8]]
 function compactarConjunto(array, numero) {
     let i = 0
+    let j = numero
     const array3 = []
     while (i < array.length) {
         const array2 = []
         for (i; i < numero; i++) {
             array2.push(array[i])
         }
-        numero += 2
+        numero += j
         array3.push(array2)
     }
     return array3
